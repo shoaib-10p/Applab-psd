@@ -100,7 +100,7 @@ header {
   width: 100%;
   position: relative; }
   .main-container .main-text-image .head-text {
-    background-image: url("/images/Layer-3.png");
+    background-image: url("./images/Layer-3.png");
     background-size: cover;
     position: absolute;
     top: 19%;
@@ -448,7 +448,7 @@ header {
   width: 73%;
   padding-top: 40px; }
   .main-container .design .side-image {
-    background-image: url("/images/design.png");
+    background-image: url("./images/design.png");
     height: 386px;
     background-size: contain;
     position: relative;
@@ -958,7 +958,7 @@ header {
     .main-container .ultimate-feature .ultimate-main-contain .phonesss {
       position: relative;
       height: fit-content;
-      background-image: url(/images/Ellipse-2-1.png); }
+      background-image: url(./images/Ellipse-2-1.png); }
       .main-container .ultimate-feature .ultimate-main-contain .phonesss .side-phone1 img {
         position: relative;
         right: 53px;
