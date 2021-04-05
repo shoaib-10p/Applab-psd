@@ -1,0 +1,1533 @@
+body {
+  font-family: myriad-pro;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  align-items: center;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+header .top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 15px;
+  align-items: center;
+  position: relative;
+}
+header .top .btn-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header .top .btn-nav .nav {
+  width: 60%;
+  height: 100%;
+}
+header .top .btn-nav .nav #menutoggle {
+  display: none;
+}
+header .top .btn-nav .nav .menu-icon {
+  display: none;
+}
+header .top .btn-nav .nav ul {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  display: flex;
+  padding: 0;
+}
+header .top .btn-nav .nav ul a {
+  width: 20%;
+  height: inherit;
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  padding: 2px 13px;
+}
+header .top .btn-nav .btn {
+  margin-left: 13px;
+  margin-right: 13px;
+}
+header .top .btn-nav .btn #try-for-free {
+  padding: 12px 22px;
+  background-color: royalblue;
+  border-radius: 12px;
+  color: white;
+  border: none;
+  font-size: 10px;
+}
+@media (max-width: 768px) {
+  header .top .btn-nav {
+    z-index: 2;
+  }
+  header .top .btn-nav .btn {
+    position: absolute;
+    right: 67px;
+  }
+  header .top .btn-nav .btn a #try-for-free {
+    padding: 6px 13px;
+  }
+  header .top .btn-nav .nav {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 40px;
+  }
+  header .top .btn-nav .nav ul {
+    display: block;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    text-align: right;
+    width: 100%;
+  }
+  header .top .btn-nav .nav ul a {
+    text-align: left;
+    width: 92%;
+    height: 50px;
+    background-color: #2e323d;
+    text-align: center;
+    opacity: 0.9;
+    padding: 10px 0px 10px 5%;
+    color: #fff;
+  }
+  header .top .btn-nav .nav .menu-icon {
+    width: 28px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: -42px;
+    right: 38px;
+    line-height: 60px;
+  }
+  header .top .btn-nav .nav .menu-icon i {
+    font-size: 1.7em;
+  }
+  header .top .btn-nav #menutoggle:checked ~ ul {
+    max-height: 350px;
+  }
+}
+
+.main-container .main-text-image {
+  width: 100%;
+  position: relative;
+}
+.main-container .main-text-image .head-text {
+  background-image: url("/images/Layer-3.png");
+  background-size: cover;
+  position: absolute;
+  top: 19%;
+  left: 12%;
+  max-width: 40%;
+}
+.main-container .main-text-image .head-text .editor-text {
+  height: 30px;
+}
+.main-container .main-text-image .head-text h3 {
+  width: 100%;
+  font-size: 36px;
+  margin-bottom: 24px;
+  margin-top: 0px;
+}
+.main-container .main-text-image .head-text p {
+  width: 100%;
+  font-size: 17px;
+  color: gray;
+}
+.main-container .main-text-image .head-text .btns {
+  margin: 30px;
+  width: 100%;
+}
+.main-container .main-text-image .head-text .btns button {
+  padding: 12px 22px;
+  background-color: royalblue;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  font-size: 14px;
+}
+.main-container .main-text-image .head-text .btns a {
+  text-decoration: none;
+  color: royalblue;
+  font-size: 14px;
+  padding: 5px 39px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .main-container .main-text-image .head-text {
+    top: 16%;
+    left: 13%;
+    max-width: 45%;
+  }
+  .main-container .main-text-image .head-text .editor-text {
+    height: 14px;
+  }
+  .main-container .main-text-image .head-text h3 {
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+  }
+  .main-container .main-text-image .head-text p {
+    width: 100%;
+    font-size: 10px;
+  }
+  .main-container .main-text-image .head-text .btns {
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .main-container .main-text-image .head-text .btns button {
+    display: none;
+  }
+  .main-container .main-text-image .head-text .btns a {
+    padding: 0px 0px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  .main-container .main-text-image .head-text {
+    top: 19%;
+    left: 7%;
+    max-width: 45%;
+  }
+  .main-container .main-text-image .head-text .editor-text {
+    height: 27px;
+  }
+  .main-container .main-text-image .head-text h3 {
+    width: 100%;
+    font-size: 28px;
+    margin-bottom: 24;
+    margin-top: 0px;
+  }
+  .main-container .main-text-image .head-text p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .main-container .main-text-image .head-text .btns {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .main-container .main-text-image .head-text .btns button {
+    padding: 10px 22px;
+    background-color: royalblue;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    font-size: 11px;
+  }
+  .main-container .main-text-image .head-text .btns a {
+    font-size: 10px;
+    padding: 5px 16px;
+  }
+}
+.main-container .phone-img-div img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .main-container .head-text {
+    top: 111px;
+  }
+}
+.main-container .companies-logo .logos-title {
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+.main-container .companies-logo .logos {
+  display: flex;
+  justify-content: center;
+}
+.main-container .companies-logo .logos img {
+  height: 50px;
+  padding: 15px 26px;
+}
+@media (max-width: 768px) {
+  .main-container .companies-logo .logos img {
+    height: 20px;
+    padding: 12px 9px;
+  }
+}
+.main-container .features {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+.main-container .features .feature-phone {
+  text-align: center;
+  max-width: 100%;
+}
+.main-container .features .feature-phone .feature-phone-img {
+  max-width: 61%;
+}
+.main-container .features .detial-of-features .feature-head h3 {
+  font-size: 31px;
+  width: 50%;
+  margin-left: 24px;
+  margin-bottom: 0;
+}
+.main-container .features .detial-of-features .feature-head p {
+  font-size: 10px;
+  width: 52%;
+  margin-left: 24px;
+  color: #979696;
+}
+@media (max-width: 768px) {
+  .main-container .features .detial-of-features .feature-head h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .main-container .features .detial-of-features .feature-head p {
+    width: 100%;
+    text-align: center;
+  }
+}
+.main-container .features .detial-of-features .feature-container .performance .text-img,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img,
+.main-container .features .detial-of-features .feature-container .Vector .text-img {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  height: 66px;
+}
+.main-container .features .detial-of-features .feature-container .performance .text-img .speed-img,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img .speed-img,
+.main-container .features .detial-of-features .feature-container .Vector .text-img .speed-img {
+  background-color: #ffecef;
+}
+.main-container .features .detial-of-features .feature-container .performance .text-img .proto-img,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img .proto-img,
+.main-container .features .detial-of-features .feature-container .Vector .text-img .proto-img {
+  background-color: #f4f4ff;
+}
+.main-container .features .detial-of-features .feature-container .performance .text-img .vector-img,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img .vector-img,
+.main-container .features .detial-of-features .feature-container .Vector .text-img .vector-img {
+  background-color: #e4ffee;
+}
+.main-container .features .detial-of-features .feature-container .performance .text-img .speed-img,
+.main-container .features .detial-of-features .feature-container .performance .text-img .proto-img,
+.main-container .features .detial-of-features .feature-container .performance .text-img .vector-img,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img .speed-img,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img .proto-img,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img .vector-img,
+.main-container .features .detial-of-features .feature-container .Vector .text-img .speed-img,
+.main-container .features .detial-of-features .feature-container .Vector .text-img .proto-img,
+.main-container .features .detial-of-features .feature-container .Vector .text-img .vector-img {
+  width: 15%;
+  height: 39%;
+  border-radius: 67%;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0px;
+  margin-right: 10px;
+}
+.main-container .features .detial-of-features .feature-container .performance .text-img .speed-img img,
+.main-container .features .detial-of-features .feature-container .performance .text-img .proto-img img,
+.main-container .features .detial-of-features .feature-container .performance .text-img .vector-img img,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img .speed-img img,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img .proto-img img,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img .vector-img img,
+.main-container .features .detial-of-features .feature-container .Vector .text-img .speed-img img,
+.main-container .features .detial-of-features .feature-container .Vector .text-img .proto-img img,
+.main-container .features .detial-of-features .feature-container .Vector .text-img .vector-img img {
+  width: 45%;
+}
+.main-container .features .detial-of-features .feature-container .performance .text-img small,
+.main-container .features .detial-of-features .feature-container .prototyping .text-img small,
+.main-container .features .detial-of-features .feature-container .Vector .text-img small {
+  font-size: 10px;
+  color: #979696;
+  width: 50%;
+}
+.main-container .features .detial-of-features .feature-container .performance h4 {
+  color: #f66170;
+}
+.main-container .features .detial-of-features .feature-container .prototyping h4 {
+  color: #2563ff;
+}
+.main-container .features .detial-of-features .feature-container .Vector h4 {
+  color: #40975f;
+}
+.main-container .features .detial-of-features .feature-container .performance h4,
+.main-container .features .detial-of-features .feature-container .prototyping h4,
+.main-container .features .detial-of-features .feature-container .Vector h4 {
+  text-align: center;
+  margin-bottom: -15px;
+  margin-right: 29px;
+}
+.main-container .smart-jackpot {
+  display: flex;
+  margin-bottom: 40px;
+}
+.main-container .smart-jackpot .smart-heading h2 {
+  width: 49%;
+  font-size: 30px;
+  text-align: start;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+@media (max-width: 768px) {
+  .main-container .smart-jackpot .smart-heading h2 {
+    width: 93%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding-left: 0;
+    margin-top: 20px;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+  }
+}
+.main-container .smart-jackpot .smart-paragraph {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid;
+}
+.main-container .smart-jackpot .smart-paragraph p {
+  font-size: 13px;
+  color: #979696;
+  width: 56%;
+  margin: 0 auto;
+  padding-right: 60px;
+}
+@media (max-width: 768px) {
+  .main-container .smart-jackpot .smart-paragraph p {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .main-container .smart-jackpot .smart-paragraph {
+    border-left: unset;
+  }
+}
+@media (max-width: 768px) {
+  .main-container .smart-jackpot {
+    width: 70%;
+    padding-top: 30px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+}
+.main-container .auto-network-reward {
+  display: flex;
+  justify-content: flex-end;
+  width: 73%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .main-container .auto-network-reward .auto,
+.main-container .auto-network-reward .network,
+.main-container .auto-network-reward .reward {
+    margin: 40px;
+  }
+}
+.main-container .auto-network-reward .auto .small-head h4 {
+  color: #f66170;
+}
+.main-container .auto-network-reward .network .small-head h4 {
+  color: #2563ff;
+}
+.main-container .auto-network-reward .reward .small-head h4 {
+  color: #40975f;
+}
+.main-container .auto-network-reward .auto .bill-img,
+.main-container .auto-network-reward .network .bill-img,
+.main-container .auto-network-reward .reward .bill-img {
+  background-color: #ffecef;
+}
+.main-container .auto-network-reward .auto .network-img,
+.main-container .auto-network-reward .network .network-img,
+.main-container .auto-network-reward .reward .network-img {
+  background-color: #f4f4ff;
+}
+.main-container .auto-network-reward .auto .badge-img,
+.main-container .auto-network-reward .network .badge-img,
+.main-container .auto-network-reward .reward .badge-img {
+  background-color: #e4ffee;
+}
+.main-container .auto-network-reward .auto .bill-img,
+.main-container .auto-network-reward .auto .network-img,
+.main-container .auto-network-reward .auto .badge-img,
+.main-container .auto-network-reward .network .bill-img,
+.main-container .auto-network-reward .network .network-img,
+.main-container .auto-network-reward .network .badge-img,
+.main-container .auto-network-reward .reward .bill-img,
+.main-container .auto-network-reward .reward .network-img,
+.main-container .auto-network-reward .reward .badge-img {
+  width: 56px;
+  height: 44%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .auto-network-reward .auto .bill-img img,
+.main-container .auto-network-reward .auto .network-img img,
+.main-container .auto-network-reward .auto .badge-img img,
+.main-container .auto-network-reward .network .bill-img img,
+.main-container .auto-network-reward .network .network-img img,
+.main-container .auto-network-reward .network .badge-img img,
+.main-container .auto-network-reward .reward .bill-img img,
+.main-container .auto-network-reward .reward .network-img img,
+.main-container .auto-network-reward .reward .badge-img img {
+  width: 46%;
+}
+.main-container .auto-network-reward .auto .small-head,
+.main-container .auto-network-reward .network .small-head,
+.main-container .auto-network-reward .reward .small-head {
+  width: 60%;
+}
+.main-container .auto-network-reward .auto .small-head h4,
+.main-container .auto-network-reward .network .small-head h4,
+.main-container .auto-network-reward .reward .small-head h4 {
+  margin-bottom: 0;
+}
+.main-container .auto-network-reward .auto .small-head small,
+.main-container .auto-network-reward .network .small-head small,
+.main-container .auto-network-reward .reward .small-head small {
+  font-size: 10px;
+  color: #979696;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .main-container .auto-network-reward {
+    flex-wrap: wrap;
+    width: 62%;
+  }
+  .main-container .auto-network-reward .auto .bill-img,
+.main-container .auto-network-reward .auto .network-img,
+.main-container .auto-network-reward .auto .badge-img,
+.main-container .auto-network-reward .network .bill-img,
+.main-container .auto-network-reward .network .network-img,
+.main-container .auto-network-reward .network .badge-img,
+.main-container .auto-network-reward .reward .bill-img,
+.main-container .auto-network-reward .reward .network-img,
+.main-container .auto-network-reward .reward .badge-img {
+    margin: 0 auto;
+  }
+  .main-container .auto-network-reward .auto .small-head,
+.main-container .auto-network-reward .network .small-head,
+.main-container .auto-network-reward .reward .small-head {
+    width: 100%;
+    text-align: center;
+  }
+}
+.main-container .design {
+  display: flex;
+  margin: 0 auto;
+  width: 73%;
+  padding-top: 40px;
+}
+.main-container .design .side-image {
+  background-image: url("/images/design.png");
+  height: 386px;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.main-container .design .side-image svg image {
+  height: 33px;
+}
+.main-container .design .design-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-container .design .design-detail h4 {
+  width: 49%;
+  font-size: 30px;
+  text-align: start;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.main-container .design .design-detail p {
+  font-size: 13px;
+  color: #979696;
+  width: 49%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.main-container .design .design-detail a {
+  text-align: center;
+  width: 70%;
+}
+.main-container .design .design-detail a button {
+  padding: 12px 22px;
+  background-color: royalblue;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  font-size: 10px;
+}
+@media (max-width: 768px) {
+  .main-container .design .design-detail {
+    align-items: center;
+  }
+  .main-container .design .design-detail h4 {
+    width: 65%;
+    font-size: 23px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .main-container .design .design-detail p {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 56%;
+  }
+}
+@media (max-width: 768px) {
+  .main-container .design {
+    flex-wrap: wrap;
+  }
+}
+.main-container .why-should {
+  width: 73%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.main-container .why-should .head h4 {
+  width: 33%;
+  font-size: 34px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.main-container .why-should .head p {
+  font-size: 13px;
+  color: #979696;
+  width: 34%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .main-container .why-should .head h4 {
+    width: 77%;
+    font-size: 28px;
+  }
+  .main-container .why-should .head p {
+    width: 77%;
+  }
+}
+.main-container .why-should .app-award-storage,
+.main-container .why-should .costum-ux-support {
+  display: flex;
+  height: fit-content;
+}
+.main-container .why-should .app-award-storage .app,
+.main-container .why-should .app-award-storage .award,
+.main-container .why-should .app-award-storage .storage,
+.main-container .why-should .app-award-storage .costum,
+.main-container .why-should .app-award-storage .ux,
+.main-container .why-should .app-award-storage .support,
+.main-container .why-should .costum-ux-support .app,
+.main-container .why-should .costum-ux-support .award,
+.main-container .why-should .costum-ux-support .storage,
+.main-container .why-should .costum-ux-support .costum,
+.main-container .why-should .costum-ux-support .ux,
+.main-container .why-should .costum-ux-support .support {
+  margin-bottom: 20px;
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+  height: 185px;
+}
+.main-container .why-should .app-award-storage .app .app-img,
+.main-container .why-should .app-award-storage .app .service-img,
+.main-container .why-should .app-award-storage .award .app-img,
+.main-container .why-should .app-award-storage .award .service-img,
+.main-container .why-should .app-award-storage .storage .app-img,
+.main-container .why-should .app-award-storage .storage .service-img,
+.main-container .why-should .app-award-storage .costum .app-img,
+.main-container .why-should .app-award-storage .costum .service-img,
+.main-container .why-should .app-award-storage .ux .app-img,
+.main-container .why-should .app-award-storage .ux .service-img,
+.main-container .why-should .app-award-storage .support .app-img,
+.main-container .why-should .app-award-storage .support .service-img,
+.main-container .why-should .costum-ux-support .app .app-img,
+.main-container .why-should .costum-ux-support .app .service-img,
+.main-container .why-should .costum-ux-support .award .app-img,
+.main-container .why-should .costum-ux-support .award .service-img,
+.main-container .why-should .costum-ux-support .storage .app-img,
+.main-container .why-should .costum-ux-support .storage .service-img,
+.main-container .why-should .costum-ux-support .costum .app-img,
+.main-container .why-should .costum-ux-support .costum .service-img,
+.main-container .why-should .costum-ux-support .ux .app-img,
+.main-container .why-should .costum-ux-support .ux .service-img,
+.main-container .why-should .costum-ux-support .support .app-img,
+.main-container .why-should .costum-ux-support .support .service-img {
+  background-color: #ffecef;
+}
+.main-container .why-should .app-award-storage .app .award-img,
+.main-container .why-should .app-award-storage .app .costum-img,
+.main-container .why-should .app-award-storage .award .award-img,
+.main-container .why-should .app-award-storage .award .costum-img,
+.main-container .why-should .app-award-storage .storage .award-img,
+.main-container .why-should .app-award-storage .storage .costum-img,
+.main-container .why-should .app-award-storage .costum .award-img,
+.main-container .why-should .app-award-storage .costum .costum-img,
+.main-container .why-should .app-award-storage .ux .award-img,
+.main-container .why-should .app-award-storage .ux .costum-img,
+.main-container .why-should .app-award-storage .support .award-img,
+.main-container .why-should .app-award-storage .support .costum-img,
+.main-container .why-should .costum-ux-support .app .award-img,
+.main-container .why-should .costum-ux-support .app .costum-img,
+.main-container .why-should .costum-ux-support .award .award-img,
+.main-container .why-should .costum-ux-support .award .costum-img,
+.main-container .why-should .costum-ux-support .storage .award-img,
+.main-container .why-should .costum-ux-support .storage .costum-img,
+.main-container .why-should .costum-ux-support .costum .award-img,
+.main-container .why-should .costum-ux-support .costum .costum-img,
+.main-container .why-should .costum-ux-support .ux .award-img,
+.main-container .why-should .costum-ux-support .ux .costum-img,
+.main-container .why-should .costum-ux-support .support .award-img,
+.main-container .why-should .costum-ux-support .support .costum-img {
+  background-color: #eaf9ff;
+}
+.main-container .why-should .app-award-storage .app .storage-img,
+.main-container .why-should .app-award-storage .award .storage-img,
+.main-container .why-should .app-award-storage .storage .storage-img,
+.main-container .why-should .app-award-storage .costum .storage-img,
+.main-container .why-should .app-award-storage .ux .storage-img,
+.main-container .why-should .app-award-storage .support .storage-img,
+.main-container .why-should .costum-ux-support .app .storage-img,
+.main-container .why-should .costum-ux-support .award .storage-img,
+.main-container .why-should .costum-ux-support .storage .storage-img,
+.main-container .why-should .costum-ux-support .costum .storage-img,
+.main-container .why-should .costum-ux-support .ux .storage-img,
+.main-container .why-should .costum-ux-support .support .storage-img {
+  background-color: #fff6d3;
+}
+.main-container .why-should .app-award-storage .app .ux-img,
+.main-container .why-should .app-award-storage .award .ux-img,
+.main-container .why-should .app-award-storage .storage .ux-img,
+.main-container .why-should .app-award-storage .costum .ux-img,
+.main-container .why-should .app-award-storage .ux .ux-img,
+.main-container .why-should .app-award-storage .support .ux-img,
+.main-container .why-should .costum-ux-support .app .ux-img,
+.main-container .why-should .costum-ux-support .award .ux-img,
+.main-container .why-should .costum-ux-support .storage .ux-img,
+.main-container .why-should .costum-ux-support .costum .ux-img,
+.main-container .why-should .costum-ux-support .ux .ux-img,
+.main-container .why-should .costum-ux-support .support .ux-img {
+  background-color: #f4f4ff;
+}
+.main-container .why-should .app-award-storage .app .app-img,
+.main-container .why-should .app-award-storage .app .award-img,
+.main-container .why-should .app-award-storage .app .storage-img,
+.main-container .why-should .app-award-storage .app .costum-img,
+.main-container .why-should .app-award-storage .app .ux-img,
+.main-container .why-should .app-award-storage .app .service-img,
+.main-container .why-should .app-award-storage .award .app-img,
+.main-container .why-should .app-award-storage .award .award-img,
+.main-container .why-should .app-award-storage .award .storage-img,
+.main-container .why-should .app-award-storage .award .costum-img,
+.main-container .why-should .app-award-storage .award .ux-img,
+.main-container .why-should .app-award-storage .award .service-img,
+.main-container .why-should .app-award-storage .storage .app-img,
+.main-container .why-should .app-award-storage .storage .award-img,
+.main-container .why-should .app-award-storage .storage .storage-img,
+.main-container .why-should .app-award-storage .storage .costum-img,
+.main-container .why-should .app-award-storage .storage .ux-img,
+.main-container .why-should .app-award-storage .storage .service-img,
+.main-container .why-should .app-award-storage .costum .app-img,
+.main-container .why-should .app-award-storage .costum .award-img,
+.main-container .why-should .app-award-storage .costum .storage-img,
+.main-container .why-should .app-award-storage .costum .costum-img,
+.main-container .why-should .app-award-storage .costum .ux-img,
+.main-container .why-should .app-award-storage .costum .service-img,
+.main-container .why-should .app-award-storage .ux .app-img,
+.main-container .why-should .app-award-storage .ux .award-img,
+.main-container .why-should .app-award-storage .ux .storage-img,
+.main-container .why-should .app-award-storage .ux .costum-img,
+.main-container .why-should .app-award-storage .ux .ux-img,
+.main-container .why-should .app-award-storage .ux .service-img,
+.main-container .why-should .app-award-storage .support .app-img,
+.main-container .why-should .app-award-storage .support .award-img,
+.main-container .why-should .app-award-storage .support .storage-img,
+.main-container .why-should .app-award-storage .support .costum-img,
+.main-container .why-should .app-award-storage .support .ux-img,
+.main-container .why-should .app-award-storage .support .service-img,
+.main-container .why-should .costum-ux-support .app .app-img,
+.main-container .why-should .costum-ux-support .app .award-img,
+.main-container .why-should .costum-ux-support .app .storage-img,
+.main-container .why-should .costum-ux-support .app .costum-img,
+.main-container .why-should .costum-ux-support .app .ux-img,
+.main-container .why-should .costum-ux-support .app .service-img,
+.main-container .why-should .costum-ux-support .award .app-img,
+.main-container .why-should .costum-ux-support .award .award-img,
+.main-container .why-should .costum-ux-support .award .storage-img,
+.main-container .why-should .costum-ux-support .award .costum-img,
+.main-container .why-should .costum-ux-support .award .ux-img,
+.main-container .why-should .costum-ux-support .award .service-img,
+.main-container .why-should .costum-ux-support .storage .app-img,
+.main-container .why-should .costum-ux-support .storage .award-img,
+.main-container .why-should .costum-ux-support .storage .storage-img,
+.main-container .why-should .costum-ux-support .storage .costum-img,
+.main-container .why-should .costum-ux-support .storage .ux-img,
+.main-container .why-should .costum-ux-support .storage .service-img,
+.main-container .why-should .costum-ux-support .costum .app-img,
+.main-container .why-should .costum-ux-support .costum .award-img,
+.main-container .why-should .costum-ux-support .costum .storage-img,
+.main-container .why-should .costum-ux-support .costum .costum-img,
+.main-container .why-should .costum-ux-support .costum .ux-img,
+.main-container .why-should .costum-ux-support .costum .service-img,
+.main-container .why-should .costum-ux-support .ux .app-img,
+.main-container .why-should .costum-ux-support .ux .award-img,
+.main-container .why-should .costum-ux-support .ux .storage-img,
+.main-container .why-should .costum-ux-support .ux .costum-img,
+.main-container .why-should .costum-ux-support .ux .ux-img,
+.main-container .why-should .costum-ux-support .ux .service-img,
+.main-container .why-should .costum-ux-support .support .app-img,
+.main-container .why-should .costum-ux-support .support .award-img,
+.main-container .why-should .costum-ux-support .support .storage-img,
+.main-container .why-should .costum-ux-support .support .costum-img,
+.main-container .why-should .costum-ux-support .support .ux-img,
+.main-container .why-should .costum-ux-support .support .service-img {
+  width: 51px;
+  height: 24%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.main-container .why-should .app-award-storage .app .app-img img,
+.main-container .why-should .app-award-storage .app .award-img img,
+.main-container .why-should .app-award-storage .app .storage-img img,
+.main-container .why-should .app-award-storage .app .costum-img img,
+.main-container .why-should .app-award-storage .app .ux-img img,
+.main-container .why-should .app-award-storage .app .service-img img,
+.main-container .why-should .app-award-storage .award .app-img img,
+.main-container .why-should .app-award-storage .award .award-img img,
+.main-container .why-should .app-award-storage .award .storage-img img,
+.main-container .why-should .app-award-storage .award .costum-img img,
+.main-container .why-should .app-award-storage .award .ux-img img,
+.main-container .why-should .app-award-storage .award .service-img img,
+.main-container .why-should .app-award-storage .storage .app-img img,
+.main-container .why-should .app-award-storage .storage .award-img img,
+.main-container .why-should .app-award-storage .storage .storage-img img,
+.main-container .why-should .app-award-storage .storage .costum-img img,
+.main-container .why-should .app-award-storage .storage .ux-img img,
+.main-container .why-should .app-award-storage .storage .service-img img,
+.main-container .why-should .app-award-storage .costum .app-img img,
+.main-container .why-should .app-award-storage .costum .award-img img,
+.main-container .why-should .app-award-storage .costum .storage-img img,
+.main-container .why-should .app-award-storage .costum .costum-img img,
+.main-container .why-should .app-award-storage .costum .ux-img img,
+.main-container .why-should .app-award-storage .costum .service-img img,
+.main-container .why-should .app-award-storage .ux .app-img img,
+.main-container .why-should .app-award-storage .ux .award-img img,
+.main-container .why-should .app-award-storage .ux .storage-img img,
+.main-container .why-should .app-award-storage .ux .costum-img img,
+.main-container .why-should .app-award-storage .ux .ux-img img,
+.main-container .why-should .app-award-storage .ux .service-img img,
+.main-container .why-should .app-award-storage .support .app-img img,
+.main-container .why-should .app-award-storage .support .award-img img,
+.main-container .why-should .app-award-storage .support .storage-img img,
+.main-container .why-should .app-award-storage .support .costum-img img,
+.main-container .why-should .app-award-storage .support .ux-img img,
+.main-container .why-should .app-award-storage .support .service-img img,
+.main-container .why-should .costum-ux-support .app .app-img img,
+.main-container .why-should .costum-ux-support .app .award-img img,
+.main-container .why-should .costum-ux-support .app .storage-img img,
+.main-container .why-should .costum-ux-support .app .costum-img img,
+.main-container .why-should .costum-ux-support .app .ux-img img,
+.main-container .why-should .costum-ux-support .app .service-img img,
+.main-container .why-should .costum-ux-support .award .app-img img,
+.main-container .why-should .costum-ux-support .award .award-img img,
+.main-container .why-should .costum-ux-support .award .storage-img img,
+.main-container .why-should .costum-ux-support .award .costum-img img,
+.main-container .why-should .costum-ux-support .award .ux-img img,
+.main-container .why-should .costum-ux-support .award .service-img img,
+.main-container .why-should .costum-ux-support .storage .app-img img,
+.main-container .why-should .costum-ux-support .storage .award-img img,
+.main-container .why-should .costum-ux-support .storage .storage-img img,
+.main-container .why-should .costum-ux-support .storage .costum-img img,
+.main-container .why-should .costum-ux-support .storage .ux-img img,
+.main-container .why-should .costum-ux-support .storage .service-img img,
+.main-container .why-should .costum-ux-support .costum .app-img img,
+.main-container .why-should .costum-ux-support .costum .award-img img,
+.main-container .why-should .costum-ux-support .costum .storage-img img,
+.main-container .why-should .costum-ux-support .costum .costum-img img,
+.main-container .why-should .costum-ux-support .costum .ux-img img,
+.main-container .why-should .costum-ux-support .costum .service-img img,
+.main-container .why-should .costum-ux-support .ux .app-img img,
+.main-container .why-should .costum-ux-support .ux .award-img img,
+.main-container .why-should .costum-ux-support .ux .storage-img img,
+.main-container .why-should .costum-ux-support .ux .costum-img img,
+.main-container .why-should .costum-ux-support .ux .ux-img img,
+.main-container .why-should .costum-ux-support .ux .service-img img,
+.main-container .why-should .costum-ux-support .support .app-img img,
+.main-container .why-should .costum-ux-support .support .award-img img,
+.main-container .why-should .costum-ux-support .support .storage-img img,
+.main-container .why-should .costum-ux-support .support .costum-img img,
+.main-container .why-should .costum-ux-support .support .ux-img img,
+.main-container .why-should .costum-ux-support .support .service-img img {
+  width: 46%;
+}
+.main-container .why-should .app-award-storage .app h4,
+.main-container .why-should .app-award-storage .award h4,
+.main-container .why-should .app-award-storage .storage h4,
+.main-container .why-should .app-award-storage .costum h4,
+.main-container .why-should .app-award-storage .ux h4,
+.main-container .why-should .app-award-storage .support h4,
+.main-container .why-should .costum-ux-support .app h4,
+.main-container .why-should .costum-ux-support .award h4,
+.main-container .why-should .costum-ux-support .storage h4,
+.main-container .why-should .costum-ux-support .costum h4,
+.main-container .why-should .costum-ux-support .ux h4,
+.main-container .why-should .costum-ux-support .support h4 {
+  margin-bottom: 0;
+}
+.main-container .why-should .app-award-storage .app small,
+.main-container .why-should .app-award-storage .award small,
+.main-container .why-should .app-award-storage .storage small,
+.main-container .why-should .app-award-storage .costum small,
+.main-container .why-should .app-award-storage .ux small,
+.main-container .why-should .app-award-storage .support small,
+.main-container .why-should .costum-ux-support .app small,
+.main-container .why-should .costum-ux-support .award small,
+.main-container .why-should .costum-ux-support .storage small,
+.main-container .why-should .costum-ux-support .costum small,
+.main-container .why-should .costum-ux-support .ux small,
+.main-container .why-should .costum-ux-support .support small {
+  font-size: 10px;
+  color: #979696;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .main-container .why-should .app-award-storage,
+.main-container .why-should .costum-ux-support {
+    flex-direction: column;
+  }
+  .main-container .why-should .app-award-storage .app,
+.main-container .why-should .app-award-storage .award,
+.main-container .why-should .app-award-storage .storage,
+.main-container .why-should .app-award-storage .costum,
+.main-container .why-should .app-award-storage .ux,
+.main-container .why-should .app-award-storage .support,
+.main-container .why-should .costum-ux-support .app,
+.main-container .why-should .costum-ux-support .award,
+.main-container .why-should .costum-ux-support .storage,
+.main-container .why-should .costum-ux-support .costum,
+.main-container .why-should .costum-ux-support .ux,
+.main-container .why-should .costum-ux-support .support {
+    width: 59%;
+  }
+}
+.main-container .ultimate-feature {
+  width: 73%;
+  margin: 0 auto;
+}
+.main-container .ultimate-feature .ultimate-head h4 {
+  width: 40%;
+  font-size: 34px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+.main-container .ultimate-feature .ultimate-head p {
+  font-size: 9px;
+  color: #979696;
+  width: 34%;
+  margin-bottom: 20px;
+  text-align: start;
+}
+.main-container .ultimate-feature .ultimate-main-contain {
+  display: flex;
+}
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support {
+  display: flex;
+}
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app-img {
+  background-color: #ffecef;
+}
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .service-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .service-img {
+  background-color: #eaf9ff;
+}
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage-img {
+  background-color: #fff6d3;
+}
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux-img {
+  background-color: #f4f4ff;
+}
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support {
+  margin-bottom: 20px;
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+  height: 185px;
+}
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support h4 {
+  margin-bottom: 0px;
+}
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support small {
+  font-size: 10px;
+  color: #979696;
+  width: 50%;
+}
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app .app-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app .ux-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app .storage-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app .service-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux .app-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux .ux-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux .storage-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux .service-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage .app-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage .ux-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage .storage-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage .service-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support .app-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support .ux-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support .storage-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support .service-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app .app-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app .ux-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app .storage-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app .service-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux .app-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux .ux-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux .storage-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux .service-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage .app-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage .ux-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage .storage-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage .service-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support .app-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support .ux-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support .storage-img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support .service-img {
+  width: 51px;
+  height: 24%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app .app-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app .ux-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app .storage-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app .service-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux .app-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux .ux-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux .storage-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux .service-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage .app-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage .ux-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage .storage-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage .service-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support .app-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support .ux-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support .storage-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support .service-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app .app-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app .ux-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app .storage-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app .service-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux .app-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux .ux-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux .storage-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux .service-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage .app-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage .ux-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage .storage-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage .service-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support .app-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support .ux-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support .storage-img img,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support .service-img img {
+  width: 45%;
+}
+.main-container .ultimate-feature .ultimate-main-contain .phonesss {
+  position: relative;
+  height: fit-content;
+  background-image: url(/images/Ellipse-2-1.png);
+}
+.main-container .ultimate-feature .ultimate-main-contain .phonesss .side-phone1 img {
+  position: relative;
+  right: 53px;
+  width: 80%;
+}
+.main-container .ultimate-feature .ultimate-main-contain .phonesss .side-phone2 img {
+  width: 70%;
+  position: absolute;
+  top: 27px;
+  left: 101px;
+}
+.main-container .ultimate-feature a button {
+  padding: 10px 42px;
+  background-color: royalblue;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  font-size: 12px;
+}
+@media (max-width: 768px) {
+  .main-container .ultimate-feature .ultimate-main-contain {
+    flex-wrap: wrap;
+  }
+  .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support {
+    margin-bottom: 45px;
+    padding: -2px 31px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    height: 205px;
+    padding-left: -6px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .main-container .ultimate-feature .ultimate-head h4 {
+    width: 100%;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+  .main-container .ultimate-feature .ultimate-head p {
+    font-size: 9px;
+    color: #979696;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .main-container .ultimate-feature {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.main-container .awsome-feature {
+  width: 73%;
+  margin: 0 auto;
+}
+.main-container .awsome-feature .awsome-head h4 {
+  width: 54%;
+  font-size: 34px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.main-container .awsome-feature .awsome-head p {
+  font-size: 13px;
+  color: #979696;
+  width: 47%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main-container .awsome-feature .period-change-toggle {
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-container .awsome-feature .period-change-toggle .monthly {
+  width: 76%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  border-radius: 17px;
+  padding: 2px;
+  margin: 0 auto;
+}
+.main-container .awsome-feature .period-change-toggle .monthly a button {
+  padding: 8px 27px;
+  background-color: royalblue;
+  border-radius: 27px;
+  color: white;
+  border: none;
+  font-size: 11px;
+}
+.main-container .awsome-feature .period-change-toggle .annually {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-container .awsome-feature .period-change-toggle .annually a {
+  text-decoration: none;
+  color: #979696;
+  font-size: 12px;
+  padding: 7px;
+}
+.main-container .awsome-feature .monthly-annually {
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
+  height: fit-content;
+}
+.main-container .awsome-feature .monthly-annually .annually-card {
+  border: 1px solid #ebebeb;
+}
+.main-container .awsome-feature .monthly-annually .annually-card {
+  box-shadow: unset;
+}
+.main-container .awsome-feature .monthly-annually .monthly-card,
+.main-container .awsome-feature .monthly-annually .annually-card {
+  margin: 0 20px;
+  box-shadow: 0 22px 53px 0 #eceff0, 0 7px 5px 0 #eceff0;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.main-container .awsome-feature .monthly-annually .monthly-card .monthly-head,
+.main-container .awsome-feature .monthly-annually .monthly-card .annually-head,
+.main-container .awsome-feature .monthly-annually .annually-card .monthly-head,
+.main-container .awsome-feature .monthly-annually .annually-card .annually-head {
+  padding: 17px 7px;
+  background-color: #f5f8f9;
+  text-align: center;
+  background-image: linear-gradient(180deg, #fff, #eceff0);
+}
+.main-container .awsome-feature .monthly-annually .monthly-card .monthly-head strong,
+.main-container .awsome-feature .monthly-annually .monthly-card .annually-head strong,
+.main-container .awsome-feature .monthly-annually .annually-card .monthly-head strong,
+.main-container .awsome-feature .monthly-annually .annually-card .annually-head strong {
+  font-size: 38px;
+}
+.main-container .awsome-feature .monthly-annually .monthly-card .monthly-head small,
+.main-container .awsome-feature .monthly-annually .monthly-card .annually-head small,
+.main-container .awsome-feature .monthly-annually .annually-card .monthly-head small,
+.main-container .awsome-feature .monthly-annually .annually-card .annually-head small {
+  font-size: 12px;
+  color: #979696;
+}
+.main-container .awsome-feature .monthly-annually .monthly-card .monthly-head p,
+.main-container .awsome-feature .monthly-annually .monthly-card .annually-head p,
+.main-container .awsome-feature .monthly-annually .annually-card .monthly-head p,
+.main-container .awsome-feature .monthly-annually .annually-card .annually-head p {
+  margin-bottom: 0;
+}
+.main-container .awsome-feature .monthly-annually .monthly-card .monthly-small,
+.main-container .awsome-feature .monthly-annually .monthly-card .annually-small,
+.main-container .awsome-feature .monthly-annually .annually-card .monthly-small,
+.main-container .awsome-feature .monthly-annually .annually-card .annually-small {
+  width: 68%;
+  line-height: 37px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  color: #979696;
+}
+.main-container .awsome-feature .monthly-annually .monthly-card .monthly-small small,
+.main-container .awsome-feature .monthly-annually .monthly-card .annually-small small,
+.main-container .awsome-feature .monthly-annually .annually-card .monthly-small small,
+.main-container .awsome-feature .monthly-annually .annually-card .annually-small small {
+  font-size: 12px;
+  color: #979696;
+}
+.main-container .awsome-feature .monthly-annually .monthly-card a button,
+.main-container .awsome-feature .monthly-annually .annually-card a button {
+  padding: 8px 27px;
+  background-color: royalblue;
+  border-radius: 27px;
+  color: white;
+  border: none;
+  font-size: 11px;
+}
+.main-container .awsome-feature .monthly-annually .monthly-card p,
+.main-container .awsome-feature .monthly-annually .annually-card p {
+  margin: 10px 0px;
+  font-size: 11px;
+  color: royalblue;
+}
+@media (max-width: 768px) {
+  .main-container .awsome-feature {
+    width: 90%;
+  }
+  .main-container .awsome-feature .awsome-head h4 {
+    width: 81%;
+    font-size: 22px;
+  }
+  .main-container .awsome-feature .period-change-toggle {
+    width: 100%;
+  }
+  .main-container .awsome-feature .period-change-toggle .monthly {
+    width: 47%;
+  }
+  .main-container .awsome-feature .monthly-annually {
+    flex-wrap: wrap;
+  }
+}
+.main-container .meet-client {
+  display: flex;
+  width: 78%;
+  margin: 0 auto;
+}
+.main-container .meet-client .side-people-img {
+  width: 100%;
+}
+.main-container .meet-client .side-people-img img {
+  height: 520px;
+}
+.main-container .meet-client .client-satisfaction h4 {
+  width: 80%;
+  font-size: 28px;
+  text-align: start;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+.main-container .meet-client .client-satisfaction p {
+  font-size: 11px;
+  color: #979696;
+  width: 82%;
+  margin-bottom: 20px;
+  text-align: start;
+}
+.main-container .meet-client .client-satisfaction .fa-star {
+  color: #ffc107;
+}
+.main-container .meet-client .client-satisfaction h6 {
+  font-size: 14px;
+  margin: 14px 0px;
+}
+.main-container .meet-client .client-satisfaction .ceo-profile {
+  display: flex;
+  align-items: center;
+}
+.main-container .meet-client .client-satisfaction .ceo-profile .name-destination {
+  margin-left: 15px;
+}
+.main-container .meet-client .client-satisfaction .ceo-profile .name-destination h6 {
+  font-size: 12px;
+  margin: 10px 0;
+}
+.main-container .meet-client .client-satisfaction .ceo-profile .name-destination small {
+  font-size: 13px;
+  color: #979696;
+}
+@media (max-width: 768px) {
+  .main-container .meet-client {
+    flex-wrap: wrap;
+  }
+  .main-container .meet-client .side-people-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .main-container .meet-client .side-people-img img {
+    height: 200px;
+  }
+  .main-container .meet-client .client-satisfaction h4 {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .main-container .meet-client .client-satisfaction p {
+    font-size: 11px;
+    color: #979696;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .main-container .meet-client .client-satisfaction h6 {
+    text-align: center;
+  }
+  .main-container .meet-client .client-satisfaction .ceo-profile {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .main-container .meet-client .client-satisfaction .ceo-profile .avatar img {
+    width: 70%;
+  }
+}
+.main-container .faq-section {
+  width: 78%;
+  margin: 0 auto;
+  margin-top: 38px;
+}
+.main-container .faq-section .faq-head h4 {
+  width: 54%;
+  font-size: 34px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.main-container .faq-section .faq-head p {
+  font-size: 13px;
+  color: #979696;
+  width: 47%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main-container .faq-section .minus {
+  background-color: #f5f7fa;
+  width: 80%;
+  margin: 0 auto;
+  height: fit-content;
+  padding: 28px 39px;
+}
+.main-container .faq-section .minus h5 {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .faq-section .minus small {
+  font-size: 13px;
+  color: #979696;
+}
+.main-container .faq-section .plus1,
+.main-container .faq-section .plus2,
+.main-container .faq-section .plus3,
+.main-container .faq-section .plus4 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f7fa;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 39px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .main-container .faq-section .faq-head h4 {
+    width: 100%;
+    font-size: 28px;
+  }
+  .main-container .faq-section .faq-head p {
+    width: 100%;
+  }
+}
+.main-container .download-app {
+  width: 78%;
+  margin: 0 auto;
+  display: flex;
+}
+.main-container .download-app .app-source h4 {
+  width: 100%;
+  font-size: 34px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+.main-container .download-app .app-source small {
+  font-size: 12px;
+  color: #979696;
+}
+.main-container .download-app .app-source .socail-icon {
+  margin: 23px 0px;
+}
+.main-container .download-app .app-source .socail-icon img {
+  height: 40px;
+}
+.main-container .download-app .last-img img {
+  height: 250px;
+}
+@media (max-width: 768px) {
+  .main-container .download-app .app-source h4 {
+    font-size: 20px;
+  }
+  .main-container .download-app .last-img {
+    display: flex;
+    align-items: center;
+  }
+  .main-container .download-app .last-img img {
+    height: 100px;
+  }
+}
+
+footer {
+  background-color: #09142e;
+  width: 100%;
+}
+footer .last-container {
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 252px;
+}
+footer .last-container .ab .a {
+  color: #fcae61;
+  font-size: 22px;
+}
+footer .last-container .ab .b {
+  color: #fff;
+  font-size: 22px;
+}
+footer .last-container ul {
+  display: flex;
+  padding: 0;
+}
+footer .last-container ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+footer .last-container ul a li {
+  list-style: none;
+  padding: 1px 10px;
+}
+footer .last-container .social i {
+  color: #273043;
+  padding: 0px 6px;
+}
+footer .last-container small {
+  color: #273043;
+  margin-top: 38px;
+  font-size: 12px;
+}
