@@ -7,9 +7,9 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 10px;
   align-items: center;
-  max-width: 1366px;
+  padding: 20px 10px;
+  max-width: 100%;
   margin: 0 auto; }
   header .top {
     display: flex;
@@ -81,7 +81,7 @@ header {
               background-color: #2e323d;
               text-align: center;
               opacity: 0.9;
-              padding: 10px 0px 10px 5%;
+              padding: 10px 14px 9px 4%;
               color: #fff; }
           header .top .btn-nav .nav .menu-icon {
             width: 28px;
