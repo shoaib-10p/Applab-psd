@@ -2,6 +2,7 @@ body {
   font-family: myriad-pro;
   padding: 0;
   margin: 0;
+  max-width: 100%;
 }
 
 header {
@@ -284,11 +285,12 @@ header .top .btn-nav .btn #try-for-free {
 }
 @media (max-width: 768px) {
   .main-container .features .detial-of-features .feature-head h3 {
-    width: 100%;
+    width: 92%;
+    margin: 0 auto;
     text-align: center;
   }
   .main-container .features .detial-of-features .feature-head p {
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 }
