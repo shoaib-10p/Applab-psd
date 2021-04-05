@@ -539,7 +539,7 @@ header .top .btn-nav .btn #try-for-free {
   padding-top: 40px;
 }
 .main-container .design .side-image {
-  background-image: url("./images/design.png");
+  background-image: url("/images/design.png");
   height: 386px;
   background-size: contain;
   position: relative;
@@ -1092,7 +1092,7 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .ultimate-feature .ultimate-main-contain .phonesss {
   position: relative;
   height: fit-content;
-  background-image: url(./images/Ellipse-2-1.png);
+  background-image: url("./images/Ellipse-2-1.png");
 }
 .main-container .ultimate-feature .ultimate-main-contain .phonesss .side-phone1 img {
   position: relative;
