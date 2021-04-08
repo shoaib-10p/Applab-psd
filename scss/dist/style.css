@@ -1,7 +1,7 @@
 body {
   font-family: myriad-pro;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   max-width: 100%;
 }
 
@@ -16,16 +16,16 @@ header {
 header .top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 10px 15px;
-  align-items: center;
   position: relative;
 }
 header .top .btn-nav {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  justify-content: center;
 }
 header .top .btn-nav .nav {
   width: 60%;
@@ -131,11 +131,11 @@ header .top .btn-nav .btn #try-for-free {
 }
 .main-container .main-text-image .head-text .editor-text {
   height: 30px;
+  margin: 20px 0px;
 }
 .main-container .main-text-image .head-text h3 {
   width: 100%;
-  font-size: 36px;
-  margin-bottom: 24px;
+  font-size: 40px;
   margin-top: 0px;
 }
 .main-container .main-text-image .head-text p {
@@ -169,6 +169,7 @@ header .top .btn-nav .btn #try-for-free {
   }
   .main-container .main-text-image .head-text .editor-text {
     height: 14px;
+    margin: 6px;
   }
   .main-container .main-text-image .head-text h3 {
     width: 100%;
@@ -182,10 +183,9 @@ header .top .btn-nav .btn #try-for-free {
   }
   .main-container .main-text-image .head-text .btns {
     display: flex;
-    margin: 0px;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0;
+    margin: 0px;
   }
   .main-container .main-text-image .head-text .btns button {
     display: none;
@@ -261,7 +261,7 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .features {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 80px;
+  margin-top: 28px;
   flex-wrap: wrap;
 }
 .main-container .features .feature-phone {
@@ -278,7 +278,7 @@ header .top .btn-nav .btn #try-for-free {
   margin-bottom: 0;
 }
 .main-container .features .detial-of-features .feature-head p {
-  font-size: 10px;
+  font-size: 16px;
   width: 52%;
   margin-left: 24px;
   color: #979696;
@@ -298,10 +298,10 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .features .detial-of-features .feature-container .prototyping .text-img,
 .main-container .features .detial-of-features .feature-container .Vector .text-img {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
   height: 66px;
 }
 .main-container .features .detial-of-features .feature-container .performance .text-img .speed-img,
@@ -328,8 +328,8 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .features .detial-of-features .feature-container .Vector .text-img .speed-img,
 .main-container .features .detial-of-features .feature-container .Vector .text-img .proto-img,
 .main-container .features .detial-of-features .feature-container .Vector .text-img .vector-img {
-  width: 15%;
-  height: 39%;
+  width: 58px;
+  height: 24px;
   border-radius: 67%;
   display: flex;
   justify-content: center;
@@ -350,7 +350,7 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .features .detial-of-features .feature-container .performance .text-img small,
 .main-container .features .detial-of-features .feature-container .prototyping .text-img small,
 .main-container .features .detial-of-features .feature-container .Vector .text-img small {
-  font-size: 10px;
+  font-size: 14px;
   color: #979696;
   width: 50%;
 }
@@ -367,8 +367,7 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .features .detial-of-features .feature-container .prototyping h4,
 .main-container .features .detial-of-features .feature-container .Vector h4 {
   text-align: center;
-  margin-bottom: -15px;
-  margin-right: 29px;
+  margin: 10px;
 }
 .main-container .smart-jackpot {
   display: flex;
@@ -400,9 +399,9 @@ header .top .btn-nav .btn #try-for-free {
   border-left: 1px solid;
 }
 .main-container .smart-jackpot .smart-paragraph p {
-  font-size: 13px;
+  font-size: 14px;
   color: #979696;
-  width: 56%;
+  width: 64%;
   margin: 0 auto;
   padding-right: 60px;
 }
@@ -410,6 +409,7 @@ header .top .btn-nav .btn #try-for-free {
   .main-container .smart-jackpot .smart-paragraph p {
     padding-right: 0;
     text-align: center;
+    width: 91%;
   }
 }
 @media (max-width: 768px) {
@@ -474,7 +474,7 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .auto-network-reward .reward .network-img,
 .main-container .auto-network-reward .reward .badge-img {
   width: 56px;
-  height: 44%;
+  height: 53px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -497,15 +497,10 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .auto-network-reward .reward .small-head {
   width: 60%;
 }
-.main-container .auto-network-reward .auto .small-head h4,
-.main-container .auto-network-reward .network .small-head h4,
-.main-container .auto-network-reward .reward .small-head h4 {
-  margin-bottom: 0;
-}
 .main-container .auto-network-reward .auto .small-head small,
 .main-container .auto-network-reward .network .small-head small,
 .main-container .auto-network-reward .reward .small-head small {
-  font-size: 10px;
+  font-size: 14px;
   color: #979696;
   width: 50%;
 }
@@ -513,6 +508,11 @@ header .top .btn-nav .btn #try-for-free {
   .main-container .auto-network-reward {
     flex-wrap: wrap;
     width: 62%;
+  }
+  .main-container .auto-network-reward .auto,
+.main-container .auto-network-reward .network,
+.main-container .auto-network-reward .reward {
+    margin: 20px;
   }
   .main-container .auto-network-reward .auto .bill-img,
 .main-container .auto-network-reward .auto .network-img,
@@ -530,6 +530,16 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .auto-network-reward .reward .small-head {
     width: 100%;
     text-align: center;
+  }
+  .main-container .auto-network-reward .auto .small-head h4,
+.main-container .auto-network-reward .network .small-head h4,
+.main-container .auto-network-reward .reward .small-head h4 {
+    margin: 10px;
+  }
+  .main-container .auto-network-reward .auto .small-head small,
+.main-container .auto-network-reward .network .small-head small,
+.main-container .auto-network-reward .reward .small-head small {
+    font-size: 12px;
   }
 }
 .main-container .design {
@@ -554,16 +564,16 @@ header .top .btn-nav .btn #try-for-free {
   justify-content: center;
 }
 .main-container .design .design-detail h4 {
-  width: 49%;
+  width: 70%;
   font-size: 30px;
   text-align: start;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 .main-container .design .design-detail p {
-  font-size: 13px;
+  font-size: 16px;
   color: #979696;
-  width: 49%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -572,7 +582,7 @@ header .top .btn-nav .btn #try-for-free {
   width: 70%;
 }
 .main-container .design .design-detail a button {
-  padding: 12px 22px;
+  padding: 14px 29px;
   background-color: royalblue;
   border-radius: 25px;
   color: white;
@@ -607,16 +617,16 @@ header .top .btn-nav .btn #try-for-free {
   margin-top: 40px;
 }
 .main-container .why-should .head h4 {
-  width: 33%;
+  width: 44%;
   font-size: 34px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 .main-container .why-should .head p {
-  font-size: 13px;
+  font-size: 16px;
   color: #979696;
-  width: 34%;
+  width: 42%;
   margin: 0 auto;
   margin-bottom: 20px;
   text-align: center;
@@ -808,8 +818,8 @@ header .top .btn-nav .btn #try-for-free {
   width: 51px;
   height: 24%;
   border-radius: 50%;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -900,7 +910,7 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .why-should .costum-ux-support .costum h4,
 .main-container .why-should .costum-ux-support .ux h4,
 .main-container .why-should .costum-ux-support .support h4 {
-  margin-bottom: 0;
+  font-size: 16px;
 }
 .main-container .why-should .app-award-storage .app small,
 .main-container .why-should .app-award-storage .award small,
@@ -914,7 +924,7 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .why-should .costum-ux-support .costum small,
 .main-container .why-should .costum-ux-support .ux small,
 .main-container .why-should .costum-ux-support .support small {
-  font-size: 10px;
+  font-size: 14px;
   color: #979696;
   width: 50%;
 }
@@ -935,7 +945,21 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .why-should .costum-ux-support .costum,
 .main-container .why-should .costum-ux-support .ux,
 .main-container .why-should .costum-ux-support .support {
-    width: 59%;
+    width: 70%;
+  }
+  .main-container .why-should .app-award-storage .app small,
+.main-container .why-should .app-award-storage .award small,
+.main-container .why-should .app-award-storage .storage small,
+.main-container .why-should .app-award-storage .costum small,
+.main-container .why-should .app-award-storage .ux small,
+.main-container .why-should .app-award-storage .support small,
+.main-container .why-should .costum-ux-support .app small,
+.main-container .why-should .costum-ux-support .award small,
+.main-container .why-should .costum-ux-support .storage small,
+.main-container .why-should .costum-ux-support .costum small,
+.main-container .why-should .costum-ux-support .ux small,
+.main-container .why-should .costum-ux-support .support small {
+    font-size: 12px;
   }
 }
 .main-container .ultimate-feature {
@@ -949,9 +973,9 @@ header .top .btn-nav .btn #try-for-free {
   margin-bottom: 20px;
 }
 .main-container .ultimate-feature .ultimate-head p {
-  font-size: 9px;
+  font-size: 16px;
   color: #979696;
-  width: 34%;
+  width: 41%;
   margin-bottom: 20px;
   text-align: start;
 }
@@ -992,16 +1016,6 @@ header .top .btn-nav .btn #try-for-free {
   text-align: center;
   height: 185px;
 }
-.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app h4,
-.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux h4,
-.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage h4,
-.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support h4,
-.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app h4,
-.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux h4,
-.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage h4,
-.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support h4 {
-  margin-bottom: 0px;
-}
 .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app small,
 .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux small,
 .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage small,
@@ -1010,7 +1024,7 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux small,
 .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage small,
 .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support small {
-  font-size: 10px;
+  font-size: 14px;
   color: #979696;
   width: 50%;
 }
@@ -1049,8 +1063,8 @@ header .top .btn-nav .btn #try-for-free {
   width: 51px;
   height: 24%;
   border-radius: 50%;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -1126,13 +1140,34 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage,
 .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support {
     margin-bottom: 45px;
-    padding: -2px 31px;
     width: 50%;
-    margin: 0 auto;
     text-align: center;
     height: 205px;
-    padding-left: -6px;
     padding-right: 10px;
+  }
+  .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage h4,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support h4 {
+    margin: revert;
+    font-size: 15px;
+  }
+  .main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .app small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .ux small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .storage small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .app-ux .support small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .app small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .ux small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .storage small,
+.main-container .ultimate-feature .ultimate-main-contain .app-ux-storage-support .storage-support .support small {
+    font-size: 12px;
+  }
+  .main-container .ultimate-feature .ultimate-main-contain .phonesss {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 768px) {
@@ -1140,11 +1175,10 @@ header .top .btn-nav .btn #try-for-free {
     width: 100%;
     font-size: 34px;
     text-align: center;
-    margin-bottom: 20px;
-    margin: 0 auto;
+    margin-bottom: revert;
   }
   .main-container .ultimate-feature .ultimate-head p {
-    font-size: 9px;
+    font-size: 12px;
     color: #979696;
     width: 100%;
     margin-bottom: 20px;
@@ -1185,8 +1219,8 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .awsome-feature .period-change-toggle .monthly {
   width: 76%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   border: 1px solid #ebebeb;
   border-radius: 17px;
   padding: 2px;
@@ -1250,7 +1284,7 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .awsome-feature .monthly-annually .monthly-card .annually-head small,
 .main-container .awsome-feature .monthly-annually .annually-card .monthly-head small,
 .main-container .awsome-feature .monthly-annually .annually-card .annually-head small {
-  font-size: 12px;
+  font-size: 14px;
   color: #979696;
 }
 .main-container .awsome-feature .monthly-annually .monthly-card .monthly-head p,
@@ -1274,7 +1308,7 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .awsome-feature .monthly-annually .monthly-card .annually-small small,
 .main-container .awsome-feature .monthly-annually .annually-card .monthly-small small,
 .main-container .awsome-feature .monthly-annually .annually-card .annually-small small {
-  font-size: 12px;
+  font-size: 13px;
   color: #979696;
 }
 .main-container .awsome-feature .monthly-annually .monthly-card a button,
@@ -1300,6 +1334,10 @@ header .top .btn-nav .btn #try-for-free {
     width: 81%;
     font-size: 22px;
   }
+  .main-container .awsome-feature .awsome-head p {
+    font-size: 12px;
+    width: 84%;
+  }
   .main-container .awsome-feature .period-change-toggle {
     width: 100%;
   }
@@ -1308,6 +1346,7 @@ header .top .btn-nav .btn #try-for-free {
   }
   .main-container .awsome-feature .monthly-annually {
     flex-wrap: wrap;
+    width: 70%;
   }
 }
 .main-container .meet-client {
@@ -1330,7 +1369,7 @@ header .top .btn-nav .btn #try-for-free {
   margin-left: 0;
 }
 .main-container .meet-client .client-satisfaction p {
-  font-size: 11px;
+  font-size: 14px;
   color: #979696;
   width: 82%;
   margin-bottom: 20px;
@@ -1369,6 +1408,9 @@ header .top .btn-nav .btn #try-for-free {
   .main-container .meet-client .side-people-img img {
     height: 200px;
   }
+  .main-container .meet-client .client-satisfaction {
+    text-align: center;
+  }
   .main-container .meet-client .client-satisfaction h4 {
     width: 100%;
     font-size: 24px;
@@ -1376,7 +1418,7 @@ header .top .btn-nav .btn #try-for-free {
     margin-top: 20px;
   }
   .main-container .meet-client .client-satisfaction p {
-    font-size: 11px;
+    font-size: 12px;
     color: #979696;
     width: 100%;
     margin-bottom: 20px;
@@ -1422,7 +1464,7 @@ header .top .btn-nav .btn #try-for-free {
   padding: 28px 39px;
 }
 .main-container .faq-section .minus h5 {
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
 }
@@ -1436,13 +1478,19 @@ header .top .btn-nav .btn #try-for-free {
 .main-container .faq-section .plus4 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #f5f7fa;
   width: 80%;
   margin: 0 auto;
   padding: 0px 39px;
   margin-bottom: 10px;
   margin-top: 10px;
-  align-items: center;
+}
+.main-container .faq-section .plus1 h5,
+.main-container .faq-section .plus2 h5,
+.main-container .faq-section .plus3 h5,
+.main-container .faq-section .plus4 h5 {
+  font-size: 14px;
 }
 @media (max-width: 768px) {
   .main-container .faq-section .faq-head h4 {
@@ -1457,6 +1505,7 @@ header .top .btn-nav .btn #try-for-free {
   width: 78%;
   margin: 0 auto;
   display: flex;
+  align-items: center;
 }
 .main-container .download-app .app-source h4 {
   width: 100%;
@@ -1465,7 +1514,7 @@ header .top .btn-nav .btn #try-for-free {
   margin-bottom: 20px;
 }
 .main-container .download-app .app-source small {
-  font-size: 12px;
+  font-size: 14px;
   color: #979696;
 }
 .main-container .download-app .app-source .socail-icon {
@@ -1475,7 +1524,7 @@ header .top .btn-nav .btn #try-for-free {
   height: 40px;
 }
 .main-container .download-app .last-img img {
-  height: 250px;
+  height: 100px;
 }
 @media (max-width: 768px) {
   .main-container .download-app .app-source h4 {
@@ -1497,11 +1546,11 @@ footer {
 footer .last-container {
   width: 88%;
   margin: 0 auto;
-  display: flex;
+  height: 252px;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 252px;
 }
 footer .last-container .ab .a {
   color: #fcae61;
